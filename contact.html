@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Pakhi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main.contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      padding: 50px;
+      background-color: #111;
+    }
+
+    .contact-left, .contact-right {
+      flex: 1 1 300px;
+      max-width: 450px;
+    }
+
+    .info-box {
+      background-color: #222;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .info-box h3 {
+      color: #00ccff;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .info-box p {
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    form input, form textarea {
+      padding: 12px 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 16px;
+    }
+
+    form input::placeholder, form textarea::placeholder {
+      color: #888;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    form button {
+      background-color: #00ccff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      color: #111;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #0099cc;
+    }
+
+    main h2 {
+      width: 100%;
+      text-align: center;
+      color: #00ccff;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #888;
+      width: 100%;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">PAKHI BORKAR</h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-left">
+      <div class="info-box">
+        <h3>Email</h3>
+        <p>202401040130@mitaoe.ac.in</p>
+      </div>
+      <div class="info-box">
+        <h3>Phone</h3>
+        <p>+91 7899293225</p>
+      </div>
+      <div class="info-box">
+        <h3>Location</h3>
+        <p>Pune, India</p>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>© COPYRIGHT 2025. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

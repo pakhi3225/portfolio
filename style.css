@@ -1,0 +1,139 @@
+ /* Reset and Basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: white;
+  }
+  
+  /* Body Layout */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #222;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00ccff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ccff;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #00ccff;
+  }
+  
+  /* Main Content Area */
+  main {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  /* Home Page Specific Styling */
+  main.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  main.home img {
+    width: 300px;
+    border-radius: 20px;
+    border: 4px solid #00ccff;
+  }
+  
+  .right h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #00ccff;
+  }
+  
+  .intro {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .sub-intro {
+    font-size: 20px;
+    color: #ccc;
+  }
+  
+  /* Other Pages */
+  main.page h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00ccff;
+    text-align: center;
+  }
+  
+  /* Paragraph Styling */
+  main.page p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }
+  
+  /* Project Image Styling */
+  .project-img img {
+    max-width: 90%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #00ccff;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Gallery for Skills Images */
+  .gallery {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #00ccff;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #888;
+    width: 100%;
+    border-top: 1px solid #222;
+  }
+  
